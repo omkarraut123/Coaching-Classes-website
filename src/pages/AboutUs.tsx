@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Founder, CompanyValue, Statistic } from '../Types/abouttypes';
+import type { Founder, CompanyValue, Statistic } from '../Types/aboutTypes';
 import '../styles/AboutUs.css';
 import aniketImage from '../assets/images/aniketimage.jfif';
 import omkarImage from '../assets/images/omkarimage.jpg';
