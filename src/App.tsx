@@ -3,21 +3,21 @@ import './App.css'
 import Home from './pages/Home'
 import Navigationbar from './components/layout/Navigationbar'
 import ContactUs from './pages/ContactUs'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {Route, Routes } from 'react-router-dom';
+import AboutUs from './pages/AboutUs';
 //somechanges in feature branch
 function App() {
 
   return (
     <>
-    <div className="App">
+    <main className="App">
       <Navigationbar />
-      <BrowserRouter>
-      <Routes>
+        <Routes>
         <Route path='/' element={<Home />}/>
          <Route path='/contactus' element={<ContactUs />}/>
+          <Route path='/aboutus' element={<AboutUs />}/>
       </Routes>
-      </BrowserRouter>
-    </div>
+    </main>
     </>
   )
 }

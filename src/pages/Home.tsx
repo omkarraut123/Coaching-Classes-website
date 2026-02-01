@@ -11,7 +11,7 @@ function Home(props: Props) {
     return (
         <>
     {/* Demo Content */}
-      <main className="main-content" style={{
+      <div className="main-content" style={{
         backgroundImage: `url(${bgImage})`
       }}>
         <section className="hero">
@@ -19,8 +19,7 @@ function Home(props: Props) {
           <p>Empowering students from Grade 7 to Grade 10 across all mediums</p>
            <button className="primary-btn" onClick={ () => {
             navigate('/contactus');
-           }}>cls
-                Enquire Now
+           }}>Enquire Now
               </button>
         </section>
 
@@ -38,7 +37,7 @@ function Home(props: Props) {
             <p>Track record of excellent academic performance</p>
           </div>
         </section>
-      </main>
+      </div>
         </>
     )
 }

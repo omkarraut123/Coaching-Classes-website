@@ -1,7 +1,7 @@
 // validationUtils.ts - Type-safe validation utility functions
 
 // validationUtils.ts - Type-safe validation utility functions
-import type { FormData, FormErrors, FormFieldName } from './Types';
+import type { FormData, FormErrors, FormFieldName } from '../Types/Types';
 
 /**
  * Regular expression patterns for validation
