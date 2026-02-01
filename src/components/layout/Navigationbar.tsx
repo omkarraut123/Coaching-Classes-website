@@ -2,6 +2,7 @@ import React, { useState, type MouseEvent } from 'react';
 import AuthModal from '../layout/AuthModal';
 import type { AuthUser } from '../../Types/authypes';
 import '../../styles/Navbar.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 interface NavbarProps {
   onNavigate?: (page: string) => void;
@@ -13,6 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
   const [showProfileMenu, setShowProfileMenu] = useState<boolean>(false);
   const [user, setUser] = useState<AuthUser | null>(null);
+  const navigate = useNavigate();
 
   const toggleMobileMenu = (): void => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -124,19 +126,18 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
               </li>
 
               <li className="nav-item">
-                <a href="/aboutus" className="nav-link">
+                <Link to="Coaching-Classes-website/aboutus" className="nav-link">
                   About Us
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a
-                  href="/contactus"
-                  className="nav-link"
-                  onClick={(e) => handleNavigation(e, 'contactus')}
+                <Link
+                  to="Coaching-Classes-website/contactus"
+                  className="nav-link"                  
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
 

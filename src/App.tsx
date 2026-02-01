@@ -13,9 +13,9 @@ function App() {
     <main className="App">
       <Navigationbar />
         <Routes>
-        <Route path='/' element={<Home />}/>
-         <Route path='/contactus' element={<ContactUs />}/>
-          <Route path='/aboutus' element={<AboutUs />}/>
+        <Route path='/Coaching-Classes-website' element={<Home />}/>
+         <Route path='/Coaching-Classes-website/contactus' element={<ContactUs />}/>
+          <Route path='/Coaching-Classes-website/aboutus' element={<AboutUs />}/>
       </Routes>
     </main>
     </>

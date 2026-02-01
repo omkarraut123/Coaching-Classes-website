@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Founder, CompanyValue, Statistic } from '../Types/aboutTypes';
+import type { Founder, CompanyValue } from '../Types/aboutTypes';
 import '../styles/AboutUs.css';
 import aniketImage from '../assets/images/aniketimage.jfif';
 import omkarImage from '../assets/images/omkarimage.jpg';
@@ -65,33 +65,8 @@ const AboutPage: React.FC = () => {
     },
   ];
 
-  // Statistics
-  const statistics: Statistic[] = [
-    {
-      id: '1',
-      value: '5000+',
-      label: 'Students Enrolled',
-      icon: '👥',
-    },
-    {
-      id: '2',
-      value: '98%',
-      label: 'Success Rate',
-      icon: '📊',
-    },
-    {
-      id: '3',
-      value: '50+',
-      label: 'Expert Teachers',
-      icon: '👨‍🏫',
-    },
-    {
-      id: '4',
-      value: '10+',
-      label: 'Years of Excellence',
-      icon: '⭐',
-    },
-  ];
+  
+  
 
   return (
     <div className="about-page">

@@ -1,5 +1,4 @@
-import React from 'react'
-import bgImage from '../assets/images/mainbanner.webp'
+
 import { useNavigate } from 'react-router-dom'
 
 interface Props {}
@@ -12,13 +11,13 @@ function Home(props: Props) {
         <>
     {/* Demo Content */}
       <div className="main-content" style={{
-        backgroundImage: `url(${bgImage})`
+       
       }}>
         <section className="hero">
           <h1>Welcome to EduCoach</h1>
           <p>Empowering students from Grade 7 to Grade 10 across all mediums</p>
            <button className="primary-btn" onClick={ () => {
-            navigate('/contactus');
+            navigate('/Coaching-Classes-website/contactus');
            }}>Enquire Now
               </button>
         </section>
