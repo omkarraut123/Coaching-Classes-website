@@ -14,7 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
   const [showProfileMenu, setShowProfileMenu] = useState<boolean>(false);
   const [user, setUser] = useState<AuthUser | null>(null);
-  const navigate = useNavigate();
+ 
 
   const toggleMobileMenu = (): void => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
