@@ -2,7 +2,7 @@ import React, { useState, type MouseEvent } from 'react';
 import AuthModal from '../layout/AuthModal';
 import type { AuthUser } from '../../Types/authypes';
 import '../../styles/Navbar.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 interface NavbarProps {
   onNavigate?: (page: string) => void;
